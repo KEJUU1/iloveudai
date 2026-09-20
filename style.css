@@ -1,0 +1,14 @@
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#03070c}
+body{background:radial-gradient(ellipse at 50% 48%,#10202b 0,#071019 35%,#020407 78%)}
+#scene{position:fixed;inset:0;width:100vw;height:100vh}
+.words{
+ position:fixed;left:50%;top:31%;transform:translateX(-50%);
+ color:#dce8e7;white-space:nowrap;
+ font:700 clamp(22px,4.2vw,48px)/1 "Courier New",monospace;
+ letter-spacing:2px;text-shadow:0 0 8px #dce8e799,0 0 24px #8eb7c966;
+ opacity:0;animation:wordIn 2.8s 1.5s ease forwards;
+}
+@keyframes wordIn{
+ 0%{opacity:0;filter:blur(5px);transform:translateX(-50%) scale(.95)}
+ 30%,100%{opacity:1;filter:blur(0);transform:translateX(-50%) scale(1)}
+}
